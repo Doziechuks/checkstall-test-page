@@ -1,0 +1,20 @@
+.wrapper {
+  border: 1px red solid;
+  width: 100%;
+}
+.wrapper .container{
+  border: 1px red solid;
+  width: 100%;
+  padding: 1rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+@media screen and (max-width:650px) {
+  .wrapper .container{
+  display: none;
+}
+}

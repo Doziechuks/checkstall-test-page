@@ -1,0 +1,62 @@
+.searchBox {
+  border: 2px red solid;
+  width: 100%;
+  height: 3rem;
+  margin: 0 2rem;
+  flex: 2;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.search{
+  width: 93%;
+  height: 100%;
+  padding: 0.8rem 0.6rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search::placeholder{
+  font-size: 1.1rem;
+  color: grey;
+}
+.searchIcon{
+  width: 7%;
+  padding: 0.8rem 0.6rem;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon{
+  color: #fff;
+}
+.mobileSearchBox{
+  margin: 0;
+  height: 2.5rem;
+  position: sticky;
+  top: 0;
+}
+.mobileSearchBox .search{
+  width: 88%;
+}
+.mobileSearchBox .search::placeholder{
+  font-size: 0.9rem;
+}
+.mobileSearchBox .searchIcon{
+  width: 12%;
+}
+
+@media screen and (max-width:1100px) {
+  .searchBox {
+  height: 2.5rem;
+}
+  .search{
+  width: 87%;
+}
+ .searchIcon{
+  width: 13%;
+ }
+}

@@ -1,0 +1,126 @@
+.logoBox {
+  border: 1px red solid;
+  width: 100%;
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+}
+.menu{
+  border: 1px red solid;
+  width: 100%;
+  max-width: max-content;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menuIcon{
+  font-size: 2.5rem;
+}
+.logo{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 15rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: red;
+  user-select: none;
+  cursor: pointer;
+}
+.logo img{
+  display: block;
+  width: 100%;
+}
+.mobileLogoBox{
+flex: 1;
+width: 100%;
+max-width: 10rem;
+}
+.mobileLogoBox .menu{
+  margin-right: 0.5rem;
+}
+.mobileLogoBox .menuIcon{
+  font-size: 1.7rem;
+} 
+
+.container{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 20rem;
+  height: 100%;
+  background-color: red;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.show{
+  left: 0;
+}
+.closeBox{
+  border: 1px black solid;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+}
+.close{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+.content{
+  border: 1px black solid;
+  width: 100%;
+  height: 100%;
+}
+.option{
+  border: 1px black solid;
+  padding: 0.3rem 2rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+.option:hover{
+  color: red;
+  background-color: #EDEDED;
+}
+hr{
+  margin: 2rem 0;
+}
+
+@media screen and (max-width:1100px) {
+  .logoBox{
+    height: 3.5rem;
+    flex: 0.9rem;
+  }
+  .menu{
+    height: 100%;
+  }
+  .menuIcon{
+  font-size: 2.7rem;
+}
+.logo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+@media screen and (max-width:650px) {
+  .logoBox{
+    height: 2.5rem;
+    flex: 0.9rem;
+  }
+  .option{
+  font-size: 1.2rem;
+}
+}
