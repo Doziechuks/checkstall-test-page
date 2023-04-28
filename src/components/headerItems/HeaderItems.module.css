@@ -1,0 +1,34 @@
+.container{
+  border: 1px red solid;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: home-backround 20s ease-in infinite;
+}
+.title{
+  border: 1px red solid;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+}
+.title::first-letter{
+  text-transform: capitalize;
+}
+@media screen and (max-width:650px) {
+  .title{
+  font-size: 2rem;
+}
+}

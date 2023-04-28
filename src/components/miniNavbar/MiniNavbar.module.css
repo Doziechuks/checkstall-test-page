@@ -19,7 +19,11 @@
   justify-content: center;
   gap: 0.5rem;
 }
-
+@media screen and (max-width:1100px) {
+  .wrapper{
+  padding: 1rem 2rem;
+}
+}
 @media screen and (max-width:650px) {
   .wrapper{
     padding: 0.5rem 1rem;

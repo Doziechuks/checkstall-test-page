@@ -1,6 +1,7 @@
 .wrapper {
   border: 1px red solid;
   width: 100%;
+  background-color: #fff;
 }
 .wrapper .container{
   border: 1px red solid;
@@ -11,6 +12,11 @@
   justify-content: center;
   position: sticky;
   top: 0;
+}
+@media screen and (max-width:1100px) {
+  .wrapper .container{
+  padding: 1rem 2rem;
+}
 }
 
 @media screen and (max-width:650px) {
