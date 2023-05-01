@@ -1,0 +1,39 @@
+.container{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 10rem;
+  display: flex;
+}
+.mobilewrapper{
+  display: none;
+}
+.link{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 2rem;
+  height: 2rem;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.midLink{
+  margin: 0 0.5rem;
+}
+.link:hover{
+  background: lightgray;
+}
+@media screen and (max-width:650px) {
+  .container{
+    display: none;
+  }
+  .mobilewrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
