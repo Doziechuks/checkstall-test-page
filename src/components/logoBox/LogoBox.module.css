@@ -113,6 +113,12 @@ hr{
     height: 2.5rem;
     flex: 0.9rem;
   }
+.container{
+  max-width: 15rem;
+}
+.close{
+  font-size: 1.8rem;
+}
   .option{
   font-size: 1.2rem;
 }
