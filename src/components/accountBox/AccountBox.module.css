@@ -1,5 +1,5 @@
 .accountBox {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   flex: 0.5;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 .account {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   display: flex;
   align-items: center;
   user-select: none;
@@ -21,7 +21,7 @@
   margin: 0 0.5rem;
 }
 .cart {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
   font-size: 1.5rem;
 }
 .mobileAccountBox .account span{
-  font-size: 0.8rem;
+  display: none;
 }
 .mobileAccountBox .cart{
   margin-left: 0.5rem;

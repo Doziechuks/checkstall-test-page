@@ -1,12 +1,12 @@
 .logoBox {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   flex: 0.5;
   display: flex;
   align-items: center;
 }
 .menu{
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   max-width: max-content;
   margin-right: 1rem;
@@ -19,7 +19,7 @@
   font-size: 2.5rem;
 }
 .logo{
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   max-width: 15rem;
   font-size: 2rem;
@@ -45,23 +45,23 @@ max-width: 10rem;
 } 
 
 .container{
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   max-width: 20rem;
   height: 100%;
-  background-color: red;
+  background-color: gray;
   padding: 2rem 0;
   position: fixed;
   top: 0;
   left: -100%;
-  /* z-index: 10; */
+  z-index: 10;
   transition: all 0.5s ease-in-out;
 }
 .show{
   left: 0;
 }
 .closeBox{
-  border: 1px black solid;
+  /* border: 1px black solid; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -75,12 +75,12 @@ max-width: 10rem;
   color: #fff;
 }
 .content{
-  border: 1px black solid;
+  /* border: 1px black solid; */
   width: 100%;
   height: 100%;
 }
 .option{
-  border: 1px black solid;
+  /* border: 1px black solid; */
   padding: 0.3rem 2rem;
   text-transform: capitalize;
   font-size: 1.5rem;
@@ -106,7 +106,7 @@ hr{
     height: 100%;
   }
   .menuIcon{
-  font-size: 2.7rem;
+  font-size: 2rem;
 }
 .logo{
   height: 100%;

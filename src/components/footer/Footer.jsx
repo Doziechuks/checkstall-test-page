@@ -15,17 +15,14 @@ const Footer = () => {
         <FooterContacts />
         <FooterLinks
           title="About us"
-          option={["our company", "help center", "offers", "promotions"]}
+          option={["our company", "help center", "offers"]}
         />
         <FooterLinks
           title="Products"
           option={[
             "mens",
             "womens",
-            "babies",
-            "shoes",
             "accessories",
-            "gadgets",
           ]}
         />
         <FooterSocialLinks />

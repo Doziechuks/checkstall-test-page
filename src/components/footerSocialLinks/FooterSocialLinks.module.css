@@ -1,5 +1,5 @@
 .container{
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   max-width: 10rem;
   display: flex;
@@ -8,7 +8,7 @@
   display: none;
 }
 .link{
-  border: 1px red solid;
+  border: 1px #fff solid;
   width: 100%;
   max-width: 2rem;
   height: 2rem;
@@ -23,7 +23,7 @@
   margin: 0 0.5rem;
 }
 .link:hover{
-  background: lightgray;
+  background: #fff;
 }
 @media screen and (max-width:650px) {
   .container{
