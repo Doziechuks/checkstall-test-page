@@ -12,12 +12,33 @@
 }
 
 body{
-  /* border: 1px red solid; */
   width: 100%;
   background-color: #EDEDED;
 }
 
 .wrapper{
-  /* border: 1px red solid; */
   width: 100%;
+}
+.arrowUpBox{
+  width: 100%;
+  max-width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 1.5rem;
+  bottom: -3rem;
+  z-index: 20;
+  background-color: red;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.arrowUp{
+  font-size: 2rem;
+  color: #fff;
+}
+.arrowScroll{
+  bottom: 1rem;
 }

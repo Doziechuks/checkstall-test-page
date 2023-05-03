@@ -1,10 +1,8 @@
 .wrapper {
-  /* border: 1px red solid; */
   width: 100%;
   background-color: #fff;
 }
 .wrapper .container{
-  /* border: 1px red solid; */
   width: 100%;
   padding: 1rem 6rem;
   display: flex;

@@ -4,12 +4,10 @@
 @media screen and (max-width:650px) {
   .wrapper{
     display: block;
-    /* border: 1px red solid; */
     width: 100%;
     padding: 1rem;
   }
   .logoConatiner{
-    /* border: 1px red solid; */
     width: 100%;
     display: flex;
     align-items: center;
