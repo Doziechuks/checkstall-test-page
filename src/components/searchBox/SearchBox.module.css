@@ -5,6 +5,7 @@
   margin: 0 2rem;
   flex: 2;
   display: flex;
+  justify-content: space-between;
   border-radius: 0.5rem;
   overflow: hidden;
 }
