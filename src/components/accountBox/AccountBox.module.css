@@ -1,65 +1,37 @@
 .accountBox {
   width: 100%;
-  flex: 0.5;
+  max-width: max-content;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.account {
-  display: flex;
-  align-items: center;
-  user-select: none;
   cursor: pointer;
 }
 .accountIcon{
   font-size: 2rem;
 }
-.account span {
-  font-size: 1.3rem;
+.accountBox span {
+  font-size: 1rem;
   margin: 0 0.5rem;
-}
-.cart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.cartIcon{
-  font-size: 3rem;
+  text-transform: capitalize;
 }
 .mobileAccountBox {
-  flex: 1;
   width: 100%;
   max-width: max-content;
 }
 .mobileAccountBox .account .accountIcon{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
-.mobileAccountBox .account span{
+.mobileAccountBox span{
   display: none;
-}
-.mobileAccountBox .cart{
-  margin-left: 0.5rem;
-}
-.mobileAccountBox .cart .cartIcon{
-  font-size: 2rem;
 }
 @media screen and (max-width:1100px) {
   .accountBox{
-    height: 2.5rem;
-    flex: 1.2;
+    /* height: 2.5rem; */
     max-width: max-content;
   }
-  .account{
-    height: 100%;
-  }
   .accountIcon{
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
-  .account span {
+  .accountBox span {
   font-size: 1rem;
-}
-.cartIcon{
-  font-size: 2.3rem;
 }
 }

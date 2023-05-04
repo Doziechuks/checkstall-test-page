@@ -1,11 +1,88 @@
 .wrapper{
   width: 100%;
   background-color: #E2231A;
-  padding: 0.5rem 6rem;
+  padding: 0.8rem 2rem;
   color: #fff;
 }
 .container{
   width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.accountBox{
+  width: 100%;
+  max-width: max-content;
+}
+.navInfo{
+  width: 100%;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navInfo .option{
+max-width: max-content;
+font-size: 1rem;
+text-transform: capitalize;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+cursor: pointer;
+}
+.option .underline{
+  border: 1px #fff solid;
+  width: 100%;
+  background-color: #fff;
+  transform: translateX(-110%);
+  transition: all 0.5s ease-in-out;
+}
+.option .active{
+  transform: translateX(0);
+}
+.option:hover .underline{
+  transform: translateX(0);
+}
+
+.cartBox{
+  width: 100%;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.iconBox{
+  width: 100%;
+  max-width: max-content;
+  position: relative;
+}
+.cartIcon{
+  font-size: 2.5rem;
+}
+.circle{
+  width: 100%;
+  max-width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.7rem;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: red;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+.shop{
+  font-size: 1rem;
+}
+
+.contactBox{
+  width: 100%;
+  max-width: max-content;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -13,6 +90,7 @@
 }
 .info{
   max-width: max-content;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
