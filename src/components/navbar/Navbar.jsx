@@ -15,7 +15,7 @@ const Navbar = () => {
       <main className={classes.container}>
         <LogoBox />
         <SearchBox />
-        <AccountBox />
+        {/* <AccountBox /> */}
       </main>
       <MobileNav />
     </nav>
