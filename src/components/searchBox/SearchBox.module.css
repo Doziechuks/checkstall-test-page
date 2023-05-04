@@ -1,9 +1,8 @@
 .searchBox {
   border: 2px red solid;
   width: 100%;
+  max-width: 60%;
   height: 3rem;
-  margin: 0 2rem;
-  flex: 2;
   display: flex;
   justify-content: space-between;
   border-radius: 0.5rem;

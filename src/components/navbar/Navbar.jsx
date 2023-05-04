@@ -6,7 +6,7 @@ import MobileNav from "../mobileNav/MobileNav";
 
 import LogoBox from "../logoBox/LogoBox";
 import SearchBox from "../searchBox/SearchBox";
-import AccountBox from "../accountBox/AccountBox";
+import SearchCategory from "../searchCategory/SearchCategory";
 
 const Navbar = () => {
   return (
@@ -15,8 +15,15 @@ const Navbar = () => {
       <main className={classes.container}>
         <LogoBox />
         <SearchBox />
-        {/* <AccountBox /> */}
+        <SearchCategory />
       </main>
+      <hr />
+      <div className={classes.nav}>
+        <span className={classes.option}>offers</span>
+        <span className={classes.option}>promotions</span>
+        <span className={classes.option}>buy for me</span>
+        <span className={classes.option}>gather & ship for me</span>
+      </div>
       <MobileNav />
     </nav>
   );
