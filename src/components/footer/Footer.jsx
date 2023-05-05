@@ -28,7 +28,7 @@ const Footer = () => {
         <FooterSocialLinks />
       </div>
       <FooterSocialLinks isMobile />
-      <hr />
+      <hr className={classes.footerRule} />
       <p className={classes.right}>&copy; copyright Checkstall Technology Solution Limited 2023.</p>
     </footer>
   );
