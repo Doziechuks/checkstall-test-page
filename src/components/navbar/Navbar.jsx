@@ -17,7 +17,7 @@ const Navbar = () => {
         <SearchBox />
         <SearchCategory />
       </main>
-      <hr />
+      <hr className={classes.navRule} />
       <div className={classes.nav}>
         <span className={classes.option}>offers</span>
         <span className={classes.option}>promotions</span>

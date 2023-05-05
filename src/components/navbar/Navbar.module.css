@@ -4,12 +4,18 @@
 }
 .wrapper .container{
   width: 100%;
-  padding: 0.8rem 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
   top: 0;
+}
+.navRule{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .nav{
   width: 100%;
