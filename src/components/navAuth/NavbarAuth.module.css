@@ -1,0 +1,18 @@
+.wrapper{
+  width: 100%;
+  max-width: max-content;
+}
+.authBox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.text{
+  font-size: 0.85rem;
+}
+.text:hover{
+  text-decoration: underline;
+}

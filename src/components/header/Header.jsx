@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import classes from './Header.module.css';
 
 import data from './headerData';
@@ -9,24 +9,36 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 const Header = () => {
   const [index, setIndex] = useState(0);
+  const [timer, setTimer] = useState(0);
+  const timerIdRef = useRef(null);
 
-  useEffect(() => {
-    const lastIndex = data.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index]);
+  const handleMouseOver = () => {
+    clearTimeout(timerIdRef.current);
+  }
+  const handleMouseOut =() => {
+    timerIdRef.current = setTimeout(() => {
+      handleSlider();
+      setTimer(t => t + 1);
+    }, 4000);
+  }
+
+  const handleSlider = () => {
+    setIndex(index => {
+      const lastIndex = data.length - 1;
+      if (index < 0) {
+       return setIndex(lastIndex);
+      }
+      if (index >= lastIndex) {
+        return setIndex(0);
+      }
+      return index + 1;
+    });
+  }
 
    useEffect(() => {
-     const timerId = setInterval(() => {
-       setIndex(index + 1);
-     }, 4000);
-
-     return () => clearInterval(timerId);
-   }, [index]);
+    clearTimeout(timerIdRef.current);
+    handleMouseOut()
+   }, [timer])
 
   return (
     <header className={classes.wrapper}>
@@ -45,6 +57,8 @@ const Header = () => {
           <div
             className={`${classes.container} ${slidePosition}`}
             key={items.id}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           >
             <HeaderItems items={items} />
           </div>

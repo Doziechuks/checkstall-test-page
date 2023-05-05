@@ -1,7 +1,7 @@
 .wrapper{
   width: 100%;
   background-color: #E2231A;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.5rem;
   color: #fff;
 }
 .container{
@@ -10,7 +10,7 @@
  align-items: center;
  justify-content: space-between;
 }
-.accountBox{
+.authBox{
   width: 100%;
   max-width: max-content;
 }
@@ -24,7 +24,7 @@
 }
 .navInfo .option{
 max-width: max-content;
-font-size: 1rem;
+font-size: 0.85rem;
 text-transform: capitalize;
 display: flex;
 flex-direction: column;
@@ -52,6 +52,7 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   gap: 0.1rem;
+  cursor: pointer;
 }
 .iconBox{
   width: 100%;
@@ -77,7 +78,7 @@ cursor: pointer;
   right: -0.5rem;
 }
 .shop{
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .contactBox{

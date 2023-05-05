@@ -14,12 +14,15 @@ const AccountBox = ({ isMobile }) => {
         onClick={() => setOpen(!open)}
       >
         <FcManager className={classes.accountIcon} />
-        <span>account</span>
+        <span>my checkstall</span>
         {open ? <FaAngleUp size={20} /> : <FaAngleDown size={20} />}
       </div>
       <div className={`${classes.options} ${open && classes.openBox}`}>
         <span className={classes.option}>sign in</span>
-        <span className={classes.option}>sign up</span>
+        <span className={classes.option}>my recent purchase</span>
+        <span className={classes.option}>orders</span>
+        <span className={classes.option}>saved items</span>
+        <span className={classes.option}>personal deals</span>
       </div>
     </div>
   );
